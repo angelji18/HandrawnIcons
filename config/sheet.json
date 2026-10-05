@@ -1,0 +1,63 @@
+{
+  "sources": {
+    "main": "assets/sources/IconsMain.png",
+    "hover": "assets/sources/IconsHover.png",
+    "pressed": "assets/sources/IconsPressed.png"
+  },
+  "preparation": {
+    "white_threshold": 254,
+    "padding": 12
+  },
+  "sections": [
+    {
+      "name": "icons",
+      "states": ["main", "hover", "pressed"],
+      "remove_white": [
+        "home", "person", "envelope", "folder", "external_link", "rectangle_wide",
+        "menu", "headphones", "arrow_right", "arrow_left", "close", "rectangle_small",
+        "heart", "box_square", "box_wide", "braces"
+      ],
+      "grid_left": 125,
+      "grid_top": 0,
+      "cell_width": 375,
+      "cell_height": 375,
+      "rows": [
+        ["home", "person", "envelope", "folder", "external_link", "rectangle_wide"],
+        ["menu", "headphones", "arrow_right", "arrow_left", "close", "rectangle_small"],
+        [null, "heart", "box_square", "box_wide", "braces", null]
+      ],
+      "crop_overrides": {
+        "home": [125, 100, 500, 420],
+        "menu": [125, 420, 500, 750],
+        "external_link": [1625, 0, 1965, 375],
+        "rectangle_wide": [1970, 0, 2500, 400],
+        "rectangle_small": [2000, 400, 2500, 750]
+      }
+    },
+    {
+      "name": "doodles",
+      "states": ["main"],
+      "remove_white": [
+        "cloud_tall", "thundercloud", "cloud_1", "cloud_2", "cloud_3", "cloud_4",
+        "cloud_5", "cloud_6", "frame_1", "frame_2", "frame_3", "paintbrush",
+        "elephant", "paper_plane", "ice_cream", "rose", "star_large", "star_small"
+      ],
+      "grid_left": 125,
+      "grid_top": 0,
+      "cell_width": 375,
+      "cell_height": 375,
+      "rows": [
+        [null, null, null, null, null, null],
+        [null, null, null, null, null, null],
+        ["cloud_tall", null, null, null, null, "thundercloud"],
+        ["cloud_1", "cloud_2", "cloud_3", "cloud_4", "cloud_5", "cloud_6"],
+        ["frame_1", "frame_2", "frame_3", "paintbrush", "elephant", "paper_plane"],
+        ["ice_cream", "rose", "star_large", "star_small", null, null]
+      ],
+      "crop_overrides": {
+        "star_large": [900, 1970, 1080, 2160],
+        "star_small": [1135, 1935, 1250, 2070]
+      }
+    }
+  ]
+}
